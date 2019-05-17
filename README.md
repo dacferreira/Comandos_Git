@@ -1,6 +1,6 @@
-<Comandos do GIT, que são úteis pra o dia a dia>
+##Comandos do GIT, que são úteis pra o dia a dia
 
-[Configuração]
+## [Configuração]
 git config --global user.name "<Nome usuário>"
 // Configurar globalmente o usuário para o git
 
@@ -20,7 +20,7 @@ git config --list --global
  // Para o git solicitar os dados de autenticação novamente
  
  
-[Trace]
+## [Trace]
 export GIT_TRACE=1  
 // Habilita o trace de funcionalidades (output) 
 
@@ -28,12 +28,12 @@ export GCM_TRACE=1
 // Git credentials manager
  
  
-[Repositório]
+## [Repositório]
 git –bare init
 // Cria um repositório git para acesso remoto
 
 
-[ Commits ]
+## [Commits]
 
 git add -A
 // Adiciona todas as alterações, inclusive arquivos novos,  para commit
@@ -45,7 +45,7 @@ git commit -a -m “<Descrição do commit>”
 // Adiciona e consolidada as alterações, mas não adiciona novos arquivos
 
 
-[ Branchs ]
+## [ Branchs ]
 
 git branch name_branch
 // cria um branch novo apartir do branch atual
@@ -83,7 +83,7 @@ git branch -m old_branch new_branch
 // Para renomear branch
 
 
-[ Log ]
+## [ Log ]
 
 git log 
 // mostra o log do git
@@ -116,7 +116,7 @@ git blame nome_arquivo
 // mostra quem foi o autor de cada linha de um arquivo
 
 
-[Reset]
+## [Reset]
 
 git reset HEAD text2.txt 
 // Voltar o arquivo que está no estagio para comitar, para untracked files
@@ -139,7 +139,7 @@ git reset HEAD~1 --hard
 git reset –hard SHA1DOCOMMIT
 // desfaz as alterações consolidadas depois do commit específicado
 
-[ Whatchanged ]
+## [ Whatchanged ]
 git whatchanged
 // mostra quais arquivos foram alterados em cada commit
 
@@ -147,7 +147,7 @@ git whatchanged –author=Name Author
 // mostra quais arquivos foram alterados em cada commit de um autor específico
 
 
-[ Checkout ]
+## [ Checkout ]
 
 git checkout -f
 // desfaz as alterações não consolidadas no branch atual
@@ -165,7 +165,7 @@ git rebase funcionalidade1
 // Rodar dentro do master - reordena a ordem dos commits, mas trazendo o comit da funcionalidade1 para o master
 
 
-[ Ignore ]
+## [ Ignore ]
 
 git update-index –assume-unchanged <filename(s)>
 //Para ignorar arquivos já existentes em seu projeto
@@ -178,7 +178,7 @@ git ls-files -v | grep “h ”
 //Para listar arquivos já ignorados em seu projeto
 
 
-[ Tags ]
+## [ Tags ]
 
 git tag 0.0.1 
 // Cria um tag com a versão
@@ -202,7 +202,7 @@ git push origin master --tags
 // Irá criar um release com a tag
 
 
-[ Revert ]
+## [Revert ]
 
 git checkout SHA1^ — <filename>
 //Para reverter um arquivo para uma determinada versão
@@ -211,7 +211,7 @@ git revert SHA1
 //Para reverter para um determinado commit criando um novo commit
 
 
-[ Reset ]
+## [ Reset ]
 
 git reset –hard SHA1
 //Para reverter para um determinado commit
@@ -220,7 +220,7 @@ git reset –hard HEAD^
 //Para reverter o último commit
 
 
-[ Stash ]
+## [ Stash ]
 
 git stash
 // move as alterações não adicionadas ao commit para memoria tempoária e limpa o branch das alterações.
