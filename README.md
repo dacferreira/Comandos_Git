@@ -1,4 +1,4 @@
-##Comandos do GIT, que são úteis pra o dia a dia
+## Comandos do GIT, que são úteis pra o dia a dia
 
 ## [Configuração]
 git config --global user.name "<Nome usuário>"
